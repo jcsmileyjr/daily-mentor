@@ -1,0 +1,21 @@
+
+#recentBlogImage {
+    /* width: 70%; */
+    /* width: 640px; */
+    height: 340px;
+    width: 100%;
+    /* margin: auto; */
+}
+
+.centerImage {
+    display: flex;
+}
+
+#recentBlogLink {
+    display: block;
+    text-align: center;
+}
+
+.recent-blog-container {
+    margin: 0px 5px 0px 5px;
+}

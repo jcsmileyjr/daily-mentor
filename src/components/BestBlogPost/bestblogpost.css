@@ -1,0 +1,13 @@
+
+
+.blog-section {
+    display: flex;
+}
+
+@media (max-width: 500px){
+    .blog-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-rows: 1fr 1fr; */
+    }
+}

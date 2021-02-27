@@ -1,0 +1,15 @@
+
+
+
+.blogtitles-section {
+    display: flex;
+    flex-direction: column;
+}
+
+h4 {
+    margin-bottom: 0px;
+}
+
+#blog-section-title {
+    margin-bottom: 0px;
+}

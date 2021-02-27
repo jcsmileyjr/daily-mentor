@@ -1,0 +1,28 @@
+
+img {
+    height: 225px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.typeA {
+    height: 225px;
+    width: 100%;
+    background-color: pink;
+}
+
+.typeB {
+    height: 150px;
+    width: 80%;
+    background-color: aqua;
+}
+
+.container {
+    margin: 0px 5px 0px 5px;
+    flex: 1;
+}
+
+a {
+    margin-top: 0px;
+    color: navy;
+}

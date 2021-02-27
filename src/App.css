@@ -1,0 +1,96 @@
+/* .App {
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+} */
+
+
+header {
+  text-align: center;
+  font-size: 2rem;
+}
+
+main {
+  display:grid;
+  grid-template-columns: 1.5fr 3fr 1fr;
+  grid-template-rows: .5fr .5fr .5fr;
+  grid-row-gap: 15px;
+  grid-column-gap: 20px;
+  grid-template-areas: 
+  "upcomingMeetups recentBlogPosts blogPosts"
+  "nextMeetups bestBlogPosts blogPosts "
+  "nextMeetups bestPodcasts blogPosts ";
+}
+
+@media (max-width: 500px){
+  main{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+      "recentBlogPosts"
+      "bestBlogPosts"
+      "bestPodcasts"
+      "upcomingMeetups"
+      "nextMeetups"
+      "blogPosts";
+  }
+}
+
+@media (max-width: 1100px){
+  main{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "recentBlogPosts"
+    "bestBlogPosts"
+    "bestPodcasts"
+    "upcomingMeetups"
+    "nextMeetups"
+    "blogPosts";
+  }
+}
+
+#upcomingMeetups {
+  grid-area: upcomingMeetups;
+  /* grid-column-start: 1 /2;
+  grid-row-start: 1 /2; */
+}
+
+#nextMeetups {
+  grid-area: nextMeetups;
+  /* grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start:2;
+  grid-row-end:4; */
+}
+
+#recentBlogPosts {
+  grid-area: recentBlogPosts;
+  /* grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2; */
+}
+
+#bestBlogPosts {
+  grid-area: bestBlogPosts;
+  /* grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3; */
+}
+
+#bestPodcasts {
+  grid-area: bestPodcasts;
+  /* grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4; */
+}
+
+#blogPosts {
+  grid-area: blogPosts;
+  /* grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start:1;
+  grid-row-end: 4; */
+}
